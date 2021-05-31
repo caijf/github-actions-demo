@@ -9,6 +9,7 @@ export default defineConfig({
   publicPath: process.env.NODE_ENV === 'production' ? '/github-actions-demo/' : '/',
   history: {
     type: 'hash'
-  }
+  },
+  hash: true
   // more config: https://d.umijs.org/config
 });
