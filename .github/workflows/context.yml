@@ -5,7 +5,7 @@ jobs:
   one:
     runs-on: ubuntu-latest
     env:
-      CURRENT_VERSION: ${{join(github.ref)}}
+      CURRENT_VERSION: ${{join(github.ref, '/')}}
     steps:
       - name: Dump Branch Name
         run: echo "$CURRENT_VERSION"
