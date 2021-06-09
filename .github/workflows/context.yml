@@ -4,7 +4,11 @@ on: push
 jobs:
   one:
     runs-on: ubuntu-latest
+    env:
+      CURRENT_VERSION: ${{github.ref.replace('refs/heads/','')}}
     steps:
+      - name: Dump Branch Name
+        run: echo "$CURRENT_VERSION"
       - name: Dump GitHub context
         env:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
