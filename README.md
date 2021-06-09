@@ -1,5 +1,7 @@
 # github-actions-demo
 
+参考 [GitHub Actions](https://docs.github.com/cn/actions)
+
 ## Getting Started
 
 Install dependencies,
